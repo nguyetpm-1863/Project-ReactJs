@@ -1,0 +1,318 @@
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.img-responsive {
+  display: block;
+  max-width: 100%;
+}
+
+.link {
+  color: black;
+
+  &:hover {
+    color: #f36a22;
+  }
+}
+
+.header {
+  &.sticky {
+    position: fixed;
+    top: 0;
+    z-index: 16;
+    width: 100%;
+    left: 0;
+    background: rgba(black, .8);
+
+    .main-menu__link {
+      color: white;
+    }
+  }
+}
+
+.menubar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 16px 0;
+}
+
+.main-menu {
+  &__list {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+
+  &__link {
+    padding: 0 24px;
+    font-weight: bold;
+    text-transform: uppercase;
+  }
+}
+
+.topbar {
+  padding: 12px 0px;
+  background: #f36a22;
+
+  &__wrap {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__contact {
+    a {
+      color: white;
+
+      &:hover {
+        color: white;
+      }
+    }
+
+    span {
+      padding: 0 8px;
+    }
+  }
+
+  &__cart {
+    .link {
+      color: #fff;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: min-content;
+    }
+
+    svg {
+      padding-right: 8px;
+    }
+  }
+}
+
+.item {
+  img {
+    width: 100%;
+    height: 80vh;
+    object-fit: cover;
+  }
+}
+
+.ft {
+  display: flex;
+  align-items: baseline;
+  padding: 32px 0px;
+
+  &__title {
+    position: relative;
+    padding: 0px;
+    margin: 0px 0px 10px 0px;
+    color: #fff;
+    font-weight: 600;
+    font-size: 16px;
+    text-transform: uppercase;
+  }
+
+  &__contact {
+    padding-right: 32px;
+
+    &-icon {
+      margin-right: 8px;
+    }
+
+    &-desc {
+      padding-bottom: 10px;
+      margin-bottom: 10px;
+      border-bottom: 1px solid #dbdbdd;
+    }
+
+    > div {
+      margin-bottom: 10px;
+      display: flex;
+      align-items: center;
+
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+  }
+
+  &__subscribe {
+    margin-left: 32px;
+  }
+}
+
+.pay_acept {
+  margin-top: 10px;
+  margin-bottom: 30px;
+  max-width: 300px;
+
+  img {
+    display: block;
+    max-width: 100%;
+  }
+}
+
+section {
+  padding: 40px 0;
+}
+
+.section-title {
+  display: flex;
+  align-items: center;
+  margin-bottom: 16px;
+
+  h2 {
+    display: inline-block;
+    font-weight: 900;
+    color: #f36a22;
+    margin: 0px;
+    font-size: 24px;
+    text-transform: uppercase;
+  }
+}
+
+.page-title {
+  font-weight: 900;
+  color: #f36a22;
+  margin: 0px;
+  font-size: 32px;
+  text-transform: uppercase;
+  margin: 16px 0;
+}
+
+.ant-card-meta-description {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+}
+
+.ant-form-item-label {
+  min-width: 200px;
+  text-align: left;
+}
+
+.contact-wrapper {
+  margin: 32px 0 0 32px;
+}
+
+.ft-contact {
+  padding: 16px 0;
+}
+
+.footer {
+  font-size: 14px;
+  line-height: 28px;
+
+  a {
+    font-size: 14px;
+  }
+}
+
+.contact {
+  padding: 120px 0;
+}
+
+.price {
+  margin: 16px 0;
+  font-weight:600;
+
+  &__number {
+    font-size: 16px;
+    padding-left: 4px;
+    color: #f10000;
+  }
+}
+
+.product-add__button {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  button {
+    width: calc(50% - 8px);
+    background-color: #f36a22;
+    border: 1px solid #f36a22;
+
+    &:hover,
+    &:focus,
+    &:active {
+      background-color: #d3530e;
+      border: 1px solid #d3530e;
+    }
+  }
+}
+
+.ant-card {
+  margin-bottom: 16px;
+  border-radius: 16px;
+  cursor: pointer;
+  position: relative;
+  z-index: 1;
+
+  &-cover {
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+    transition: all .5s;
+    cursor: pointer;
+
+    img:hover {
+      transform: scale(1.05);
+      transition: all .5s;
+    }
+  }
+}
+
+.blog-index {
+  background: #ddd;
+
+  .ant-card {
+    &-body {
+      display: block;
+      position: absolute;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background: rgba(0, 0, 0, 0.6);
+      padding: 0;
+      z-index: 2;
+
+      .ant-card-meta-title {
+        color: #fff;
+        padding: 16px;
+        font-size: 16px;
+      }
+    }
+  }
+}
+
+
+.image {
+  position: relative;
+  z-index: 1;
+  width: 100%;
+  height: 200px;
+
+  &__center {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+  }
+
+  svg {
+    width: 20px;
+    height: 20px;
+    color: #fff;
+  }
+}

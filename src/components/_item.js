@@ -1,9 +1,14 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { Card, Col, Button } from 'antd';
+
+import {
+  Link
+} from 'react-router-dom';
 
 const { Meta } = Card;
 
 const Item = (props) => {
+  const [count, setCount] = useState(0);
   return (
     <>
       <Col span='6' key= { props.items.id }>
@@ -22,9 +27,11 @@ const Item = (props) => {
           { props.items.price !== undefined ?
             <div className='product-add' >
               <p className='price'>Giá: <span className='price__number'>{ props.items.price }</span></p>
-              <div className='product-add__button' >
-                <Button type='primary'>Chi tiết</Button>
-                <Button type='primary'>Add to cart</Button>
+              <div className='product-add__button button' >
+                <Link to={ props.items.url } className='button__detail'>
+                  <Button type='primary' className='button__detail'>Chi tiết</Button>
+                </Link>
+                <Button type='primary' className='button__add' onClick={() => setCount(count + 1)}>Add to cart</Button>
               </div>
             </div>
             :

@@ -1,8 +1,8 @@
 import React, { useState } from 'react';
 import { Row, Col, Alert } from 'antd';
 import { Form, Input, Button } from 'antd';
-import Logo from '../public/logo.png';
-import Banner from '../public/banner.jpg';
+import Logo from '../assets/logo.png';
+import Banner from '../assets/banner.jpg';
 // import MapSection from './map';
 import { MailOutlined, PhoneOutlined, GlobalOutlined } from '@ant-design/icons';
 

@@ -1,8 +1,8 @@
 import React from 'react';
 import { Row } from 'antd';
-import Banner from '../public/banner-collection.jpg';
+import Banner from '../assets/banner-collection.jpg';
 import GroupItem from './_groupItem';
-import data from '../public/data.json';
+import data from '../assets/data.json';
 
 const Collection = () => {
   const collections = data.collections;

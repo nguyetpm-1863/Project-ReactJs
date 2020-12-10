@@ -3,9 +3,10 @@ import Contact from './contact.js';
 import Home from './home.js';
 import Collection from './collection.js';
 import Cart from './cart.js';
+import Product from './product.js';
 
-import Logo from '../public/logo.png';
-import { ReactComponent as CartIcon } from '../public/cart.svg';
+import Logo from '../assets/logo.png';
+import { ReactComponent as CartIcon } from '../assets/cart.svg';
 
 import {
   BrowserRouter as Router,
@@ -44,7 +45,7 @@ const Header = () => {
               <div className='topbar__cart'>
                 <Link className='image link' to='/cart'>
                   <CartIcon />
-                  (<span class='topbar__cart-number'>0</span>)
+                  (<span className='topbar__cart-number'>0</span>)
                 </Link>
               </div>
             </div>
@@ -78,6 +79,10 @@ const Header = () => {
           <Route path='/cart'>
             <Cart />
           </Route>
+          <Route
+            path='/product/:handle'
+            component={ <Product /> }
+          />
           <Route path='/contact'>
             <Contact />
           </Route>

@@ -2,7 +2,7 @@ import React from 'react';
 import { Row } from 'antd';
 import Item from './_item';
 
-import Icon from '../public/title_icon.png';
+import Icon from '../assets/title_icon.png';
 
 function GroupItem (props) {
   const groups = (props.collections === undefined) ? props.blogs : props.collections;
@@ -20,7 +20,7 @@ function GroupItem (props) {
           </h2>
         </div>
         <Row gutter={16}>
-          { groups.list.map( (item, index) => <Item key={index} items={ item }/> )}
+          { groups.list.map( (item) => <Item key={ item.id } items={ item }/> )}
         </Row>
       </div>
     </section>

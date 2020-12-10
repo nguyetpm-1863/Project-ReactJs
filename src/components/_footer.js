@@ -6,6 +6,9 @@ const Footer = () => {
     <div className='footer'>
       <div className='ft container'>
         <div className='ft-contact'>
+          <h3 className='ft__title'>
+            THÔNG TIN LIÊN HỆ
+          </h3>
           <div className='ft__contact-desc'>
             Vietnam Tiptop Travel cam kết nỗ lực hết mình nhằm cung cấp tours và dịch vụ đúng với những giá trị mà khách hàng mong đợi.
           </div>

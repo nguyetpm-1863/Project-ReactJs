@@ -115,7 +115,7 @@
     position: relative;
     padding: 0px;
     margin: 0px 0px 10px 0px;
-    color: #fff;
+    color: #f36a22;
     font-weight: 600;
     font-size: 16px;
     text-transform: uppercase;
@@ -147,6 +147,10 @@
 
   &__subscribe {
     margin-left: 32px;
+  }
+
+  &-contact {
+    padding: 16px 0;
   }
 }
 
@@ -206,10 +210,6 @@ section {
   margin: 32px 0 0 32px;
 }
 
-.ft-contact {
-  padding: 16px 0;
-}
-
 .footer {
   font-size: 14px;
   line-height: 28px;
@@ -238,7 +238,9 @@ section {
   display: flex;
   align-items: center;
   justify-content: space-between;
+}
 
+.button {
   button {
     width: calc(50% - 8px);
     background-color: #f36a22;
@@ -251,11 +253,19 @@ section {
       border: 1px solid #d3530e;
     }
   }
+
+  .button__detail {
+    width: calc(50% - 8px);
+
+    button {
+      width: 100%;
+    }
+  }
 }
 
 .ant-card {
   margin-bottom: 16px;
-  border-radius: 16px;
+  border-radius: 8px;
   cursor: pointer;
   position: relative;
   z-index: 1;
@@ -266,6 +276,8 @@ section {
     overflow: hidden;
     transition: all .5s;
     cursor: pointer;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
 
     img:hover {
       transform: scale(1.05);

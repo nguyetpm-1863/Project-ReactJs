@@ -1,7 +1,7 @@
 import React from 'react';
 import Slider from './_slider';
 import GroupItem from './_groupItem';
-import data from '../public/data.json';
+import data from '../assets/data.json';
 
 function Home () {
   const collectionsDomestic = data.collectionDomestic;

@@ -79,10 +79,7 @@ const Header = () => {
           <Route path='/cart'>
             <Cart />
           </Route>
-          <Route
-            path='/product/:handle'
-            component={ <Product /> }
-          />
+          <Route path="/product/:productId" component={Product} />
           <Route path='/contact'>
             <Contact />
           </Route>

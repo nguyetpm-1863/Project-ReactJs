@@ -12,7 +12,6 @@ const Cart = () => {
       title: 'Action',
       dataIndex: '',
       key: 'x',
-      render: () => <a href='#'>Delete</a>,
     },
   ];
   return (

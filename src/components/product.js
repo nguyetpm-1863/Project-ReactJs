@@ -1,12 +1,40 @@
 import React from 'react';
+import { Row, Col, Button } from 'antd';
+import { useDispatch, useSelector } from 'react-redux';
+import * as actions from '../redux/actions';
 
 const Product = (props) => {
-  console.log(props);
+  const product = JSON.parse(localStorage.getItem('detail'));
+
   return (
     <>
-      <div className='product'>
+      <div className='detail'>
         <div className='container'>
-          <h2>Chi tiết sản phẩm </h2>
+          <Row>
+            <Col span='12'>
+              <img
+                className='img-responsive'
+                alt= { product.title }
+                src= { product.image }
+              />
+            </Col>
+            <Col span='12'>
+              <div className='product'>
+                <h2 className='product__title'>
+                  { product.title }
+                </h2>
+                <p className='product__description'>
+                  { product.description } 
+                </p>
+                <p className='product__price'>
+                  { product.price } 
+                </p>
+                <div className='button'>
+                  <Button type='primary' className='button__product'>Add to cart</Button>
+                </div>
+              </div>
+            </Col>
+          </Row>
         </div>
       </div>
     </>

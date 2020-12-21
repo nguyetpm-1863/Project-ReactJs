@@ -10,10 +10,6 @@ import {
   Link
 } from 'react-router-dom';
 
-import {
-  getCountCardItem,
-} from '../redux/actions';
-
 const { Meta } = Card;
 
 const Item = (props) => {
@@ -31,7 +27,7 @@ const Item = (props) => {
 
   return (
     <>
-      <Col className='gutter-row' span='6' key= { props.items.id }>
+      <Col sm={{ span: 6 }} span='24' key= { props.items.id }>
         <Card
           cover={
             <img
@@ -49,7 +45,7 @@ const Item = (props) => {
             <div className='product-add' >
               <p className='price'>Giá: <span className='price__number'>{ props.items.price }</span></p>
               <div className='product-add__button button' >
-                <Link to={`/product/${props.items.id}/details`}  className='button__detail'>
+                <Link to={`/product/${props.items.id}`}  className='button__detail'>
                   <Button onClick={() => handleProduct(props.items)} type='primary' className='button__detail'>Chi tiết</Button>
                 </Link>
                 <Button onClick={() => addToCart(props.items)} type='primary' className='button__add'>Add to cart</Button>

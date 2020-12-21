@@ -39,7 +39,7 @@ const Contact = () => {
       <div className='contact'>
         <div className='container'>
           <Row>
-            <Col span={16}>
+            <Col span={24} sm={{ span: 16 }}>
               <h2 className='page-title'>
                 Liên hệ
               </h2>
@@ -66,7 +66,7 @@ const Contact = () => {
               </div>
             }
             </Col>
-            <Col span={8} >
+            <Col span={24} sm={{ span: 8 }} >
               <div className='contact-wrapper'>
                 <div className=' text-center'>
                   <a href='/'>

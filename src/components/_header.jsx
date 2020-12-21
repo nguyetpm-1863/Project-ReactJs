@@ -1,10 +1,10 @@
 import React, { useEffect } from 'react';
 import { useSelector } from 'react-redux';
-import Contact from './contact.js';
-import Home from './home.js';
-import Collection from './collection.js';
-import Cart from './cart.js';
-import Product from './product.js';
+import Contact from './contact';
+import Home from './home';
+import Collection from './collection';
+import Cart from './cart';
+import Product from './product';
 
 import Logo from '../assets/logo.png';
 import { ReactComponent as CartIcon } from '../assets/cart.svg';

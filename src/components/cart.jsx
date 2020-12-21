@@ -5,14 +5,14 @@ import { Table } from 'antd';
 
 const Cart = () => {
   const columns = [
-    { title: 'Name', dataIndex: 'name', key: 'name' },
-    { title: 'Age', dataIndex: 'age', key: 'age' },
-    { title: 'Address', dataIndex: 'address', key: 'address' },
+    { title: 'STT', dataIndex: 'number', key: 'number' },
+    { title: 'Sản phẩm', dataIndex: 'name', key: 'name' },
+    { title: 'Hình ảnh', dataIndex: 'image', key: 'image' },
+    { title: 'Số lượng', dataIndex: 'quantily', key: 'quantily' },
     {
-      title: 'Action',
+      title: 'Delete',
       dataIndex: '',
       key: 'x',
-      render: () => <a href='#'>Delete</a>,
     },
   ];
   return (

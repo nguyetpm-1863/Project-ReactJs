@@ -1,9 +1,10 @@
 import React, { useEffect } from 'react';
-import Contact from './contact.js';
-import Home from './home.js';
-import Collection from './collection.js';
-import Cart from './cart.js';
-import Product from './product.js';
+import { useSelector } from 'react-redux';
+import Contact from './contact';
+import Home from './home';
+import Collection from './collection';
+import Cart from './cart';
+import Product from './product';
 
 import Logo from '../assets/logo.png';
 import { ReactComponent as CartIcon } from '../assets/cart.svg';
@@ -15,8 +16,9 @@ import {
   Link
 } from 'react-router-dom';
 
-
 const Header = () => {
+  const countItem = useSelector((state) => state.count);
+
   useEffect(() => {
     const header = document.getElementById('header');
     const sticky = header.offsetTop;
@@ -45,7 +47,7 @@ const Header = () => {
               <div className='topbar__cart'>
                 <Link className='image link' to='/cart'>
                   <CartIcon />
-                  (<span className='topbar__cart-number'>0</span>)
+                  (<span className='topbar__cart-number'>{countItem}</span>)
                 </Link>
               </div>
             </div>
@@ -79,10 +81,7 @@ const Header = () => {
           <Route path='/cart'>
             <Cart />
           </Route>
-          <Route
-            path='/product/:handle'
-            component={ <Product /> }
-          />
+          <Route path="/product/:productId" component={Product} />
           <Route path='/contact'>
             <Contact />
           </Route>

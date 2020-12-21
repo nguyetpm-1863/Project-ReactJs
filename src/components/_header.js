@@ -1,4 +1,5 @@
 import React, { useEffect } from 'react';
+import { useSelector } from 'react-redux';
 import Contact from './contact.js';
 import Home from './home.js';
 import Collection from './collection.js';
@@ -15,8 +16,9 @@ import {
   Link
 } from 'react-router-dom';
 
-
 const Header = () => {
+  const countItem = useSelector((state) => state.count);
+
   useEffect(() => {
     const header = document.getElementById('header');
     const sticky = header.offsetTop;
@@ -45,7 +47,7 @@ const Header = () => {
               <div className='topbar__cart'>
                 <Link className='image link' to='/cart'>
                   <CartIcon />
-                  (<span className='topbar__cart-number'>0</span>)
+                  (<span className='topbar__cart-number'>{countItem}</span>)
                 </Link>
               </div>
             </div>

@@ -1,7 +1,5 @@
 import React from 'react';
 import { Row, Col, Button } from 'antd';
-import { useDispatch, useSelector } from 'react-redux';
-import * as actions from '../redux/actions';
 
 const Product = (props) => {
   const product = JSON.parse(localStorage.getItem('detail'));
@@ -24,10 +22,10 @@ const Product = (props) => {
                   { product.title }
                 </h2>
                 <p className='product__description'>
-                  { product.description } 
+                  { product.description }
                 </p>
                 <p className='product__price'>
-                  { product.price } 
+                  { product.price }
                 </p>
                 <div className='button'>
                   <Button type='primary' className='button__product'>Add to cart</Button>

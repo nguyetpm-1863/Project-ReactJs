@@ -2,6 +2,7 @@ import * as connect from './actions';
 
 const initialState = {
   product: null,
+  count: 0,
 };
 
 const rootReducer = (state = initialState, action) => {
@@ -10,6 +11,11 @@ const rootReducer = (state = initialState, action) => {
       return {
         ...state,
         product: action.product,
+      };
+    case connect.COUNT_CARD:
+      return {
+        ...state,
+        count: action.count,
       };
     default:
       return state;

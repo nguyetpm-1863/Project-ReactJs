@@ -1,31 +1,37 @@
-import React, { useEffect } from 'react';
+import React from 'react';
+import { useSelector } from 'react-redux';
+
 import { Card, Col, Button } from 'antd';
 import { useDispatch } from 'react-redux';
+
+import * as actions from '../redux/actions';
 
 import {
   Link
 } from 'react-router-dom';
 
 import {
-  getDetailProduct,
+  getCountCardItem,
 } from '../redux/actions';
 
 const { Meta } = Card;
 
 const Item = (props) => {
   const dispatch = useDispatch();
+  const countItem = useSelector((state) => state.count);
 
   const addToCart = (item) => {
-
+    // localStorage.setItem('cart', countItem);
+    dispatch(actions.getCountCardItem(countItem));
   }
-  
+
   const handleProduct = (item) => {
     localStorage.setItem('detail', JSON.stringify(item));
   };
 
   return (
     <>
-      <Col span='6' key= { props.items.id }>
+      <Col className='gutter-row' span='6' key= { props.items.id }>
         <Card
           cover={
             <img

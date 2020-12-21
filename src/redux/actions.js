@@ -5,3 +5,11 @@ export const getDetailProduct = (product) => async (dispatch) => {
     product,
   });
 };
+
+export const COUNT_CARD = 'COUNT_CARD';
+export const getCountCardItem = (count) => async (dispatch) => {
+  dispatch({
+    type: COUNT_CARD,
+    count: count + 1,
+  });
+};

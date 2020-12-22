@@ -1,19 +1,19 @@
 {
   "files": {
-    "main.css": "/Project-ReactJs/static/css/main.fbdbe51b.chunk.css",
-    "main.js": "/Project-ReactJs/static/js/main.c410232a.chunk.js",
-    "main.js.map": "/Project-ReactJs/static/js/main.c410232a.chunk.js.map",
+    "main.css": "/Project-ReactJs/static/css/main.b73c1c0e.chunk.css",
+    "main.js": "/Project-ReactJs/static/js/main.b6836666.chunk.js",
+    "main.js.map": "/Project-ReactJs/static/js/main.b6836666.chunk.js.map",
     "runtime-main.js": "/Project-ReactJs/static/js/runtime-main.260e0038.js",
     "runtime-main.js.map": "/Project-ReactJs/static/js/runtime-main.260e0038.js.map",
     "static/css/2.907ae24a.chunk.css": "/Project-ReactJs/static/css/2.907ae24a.chunk.css",
-    "static/js/2.88efcb61.chunk.js": "/Project-ReactJs/static/js/2.88efcb61.chunk.js",
-    "static/js/2.88efcb61.chunk.js.map": "/Project-ReactJs/static/js/2.88efcb61.chunk.js.map",
+    "static/js/2.6323c18b.chunk.js": "/Project-ReactJs/static/js/2.6323c18b.chunk.js",
+    "static/js/2.6323c18b.chunk.js.map": "/Project-ReactJs/static/js/2.6323c18b.chunk.js.map",
     "index.html": "/Project-ReactJs/index.html",
-    "precache-manifest.edd2c0bc7a0619e4ff5ddb80b3f2dafb.js": "/Project-ReactJs/precache-manifest.edd2c0bc7a0619e4ff5ddb80b3f2dafb.js",
+    "precache-manifest.46f49cc8fdea1fc53f5cf43e0ed7aef1.js": "/Project-ReactJs/precache-manifest.46f49cc8fdea1fc53f5cf43e0ed7aef1.js",
     "service-worker.js": "/Project-ReactJs/service-worker.js",
     "static/css/2.907ae24a.chunk.css.map": "/Project-ReactJs/static/css/2.907ae24a.chunk.css.map",
-    "static/css/main.fbdbe51b.chunk.css.map": "/Project-ReactJs/static/css/main.fbdbe51b.chunk.css.map",
-    "static/js/2.88efcb61.chunk.js.LICENSE.txt": "/Project-ReactJs/static/js/2.88efcb61.chunk.js.LICENSE.txt",
+    "static/css/main.b73c1c0e.chunk.css.map": "/Project-ReactJs/static/css/main.b73c1c0e.chunk.css.map",
+    "static/js/2.6323c18b.chunk.js.LICENSE.txt": "/Project-ReactJs/static/js/2.6323c18b.chunk.js.LICENSE.txt",
     "static/media/banner-collection.jpg": "/Project-ReactJs/static/media/banner-collection.037d80ac.jpg",
     "static/media/banner.jpg": "/Project-ReactJs/static/media/banner.c091a378.jpg",
     "static/media/cart.4142079d.svg": "/Project-ReactJs/static/media/cart.4142079d.svg",
@@ -26,8 +26,8 @@
   "entrypoints": [
     "static/js/runtime-main.260e0038.js",
     "static/css/2.907ae24a.chunk.css",
-    "static/js/2.88efcb61.chunk.js",
-    "static/css/main.fbdbe51b.chunk.css",
-    "static/js/main.c410232a.chunk.js"
+    "static/js/2.6323c18b.chunk.js",
+    "static/css/main.b73c1c0e.chunk.css",
+    "static/js/main.b6836666.chunk.js"
   ]
 }

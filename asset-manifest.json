@@ -1,33 +1,33 @@
 {
   "files": {
-    "main.css": "/Project-ReactJs/static/css/main.07d858cb.chunk.css",
-    "main.js": "/Project-ReactJs/static/js/main.89058dd2.chunk.js",
-    "main.js.map": "/Project-ReactJs/static/js/main.89058dd2.chunk.js.map",
-    "runtime-main.js": "/Project-ReactJs/static/js/runtime-main.dd35fa8a.js",
-    "runtime-main.js.map": "/Project-ReactJs/static/js/runtime-main.dd35fa8a.js.map",
+    "main.css": "/Project-ReactJs/static/css/main.fbdbe51b.chunk.css",
+    "main.js": "/Project-ReactJs/static/js/main.c410232a.chunk.js",
+    "main.js.map": "/Project-ReactJs/static/js/main.c410232a.chunk.js.map",
+    "runtime-main.js": "/Project-ReactJs/static/js/runtime-main.260e0038.js",
+    "runtime-main.js.map": "/Project-ReactJs/static/js/runtime-main.260e0038.js.map",
     "static/css/2.907ae24a.chunk.css": "/Project-ReactJs/static/css/2.907ae24a.chunk.css",
-    "static/js/2.98eec996.chunk.js": "/Project-ReactJs/static/js/2.98eec996.chunk.js",
-    "static/js/2.98eec996.chunk.js.map": "/Project-ReactJs/static/js/2.98eec996.chunk.js.map",
+    "static/js/2.88efcb61.chunk.js": "/Project-ReactJs/static/js/2.88efcb61.chunk.js",
+    "static/js/2.88efcb61.chunk.js.map": "/Project-ReactJs/static/js/2.88efcb61.chunk.js.map",
     "index.html": "/Project-ReactJs/index.html",
-    "precache-manifest.2f02cd758d804cae3e6b2063aa72955c.js": "/Project-ReactJs/precache-manifest.2f02cd758d804cae3e6b2063aa72955c.js",
+    "precache-manifest.edd2c0bc7a0619e4ff5ddb80b3f2dafb.js": "/Project-ReactJs/precache-manifest.edd2c0bc7a0619e4ff5ddb80b3f2dafb.js",
     "service-worker.js": "/Project-ReactJs/service-worker.js",
     "static/css/2.907ae24a.chunk.css.map": "/Project-ReactJs/static/css/2.907ae24a.chunk.css.map",
-    "static/css/main.07d858cb.chunk.css.map": "/Project-ReactJs/static/css/main.07d858cb.chunk.css.map",
-    "static/js/2.98eec996.chunk.js.LICENSE.txt": "/Project-ReactJs/static/js/2.98eec996.chunk.js.LICENSE.txt",
+    "static/css/main.fbdbe51b.chunk.css.map": "/Project-ReactJs/static/css/main.fbdbe51b.chunk.css.map",
+    "static/js/2.88efcb61.chunk.js.LICENSE.txt": "/Project-ReactJs/static/js/2.88efcb61.chunk.js.LICENSE.txt",
     "static/media/banner-collection.jpg": "/Project-ReactJs/static/media/banner-collection.037d80ac.jpg",
     "static/media/banner.jpg": "/Project-ReactJs/static/media/banner.c091a378.jpg",
     "static/media/cart.4142079d.svg": "/Project-ReactJs/static/media/cart.4142079d.svg",
     "static/media/logo.png": "/Project-ReactJs/static/media/logo.44d36250.png",
-    "static/media/slider-1.jpg": "/Project-ReactJs/static/media/slider-1.f3619325.jpg",
-    "static/media/slider-2.jpg": "/Project-ReactJs/static/media/slider-2.3c1ab38c.jpg",
+    "static/media/slider-1.jpg": "/Project-ReactJs/static/media/slider-1.c084cf8d.jpg",
+    "static/media/slider-2.jpg": "/Project-ReactJs/static/media/slider-2.03ff06db.jpg",
     "static/media/slider-3.jpg": "/Project-ReactJs/static/media/slider-3.22d21235.jpg",
-    "static/media/slider-4.jpg": "/Project-ReactJs/static/media/slider-4.e5ab5d3b.jpg"
+    "static/media/slider-4.jpg": "/Project-ReactJs/static/media/slider-4.d50e8be0.jpg"
   },
   "entrypoints": [
-    "static/js/runtime-main.dd35fa8a.js",
+    "static/js/runtime-main.260e0038.js",
     "static/css/2.907ae24a.chunk.css",
-    "static/js/2.98eec996.chunk.js",
-    "static/css/main.07d858cb.chunk.css",
-    "static/js/main.89058dd2.chunk.js"
+    "static/js/2.88efcb61.chunk.js",
+    "static/css/main.fbdbe51b.chunk.css",
+    "static/js/main.c410232a.chunk.js"
   ]
 }

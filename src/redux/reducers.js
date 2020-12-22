@@ -1,21 +1,21 @@
 import * as connect from './actions';
 
 const initialState = {
-  product: null,
   count: 0,
+  items: null
 };
 
 const rootReducer = (state = initialState, action) => {
   switch (action.type) {
-    case connect.DETAIL_PRODUCT:
-      return {
-        ...state,
-        product: action.product,
-      };
-    case connect.COUNT_CARD:
+    case connect.COUNT_CART:
       return {
         ...state,
         count: action.count,
+      };
+    case connect.LIST_CARD:
+      return {
+        ...state,
+        items: action.item,
       };
     default:
       return state;

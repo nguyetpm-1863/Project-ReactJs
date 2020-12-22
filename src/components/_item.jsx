@@ -4,6 +4,8 @@ import { useSelector } from 'react-redux';
 import { Card, Col, Button } from 'antd';
 import { useDispatch } from 'react-redux';
 
+import data from '../assets/data.json';
+
 import * as actions from '../redux/actions';
 
 import {
@@ -15,15 +17,37 @@ const { Meta } = Card;
 const Item = (props) => {
   const dispatch = useDispatch();
   const countItem = useSelector((state) => state.count);
+  let cart = [];
+  let listProduct = data.collections.list;
 
-  const addToCart = (item) => {
-    // localStorage.setItem('cart', countItem);
-    dispatch(actions.getCountCardItem(countItem));
+  const addToCart = (id) => {
+    dispatch(actions.getCountCartItem(countItem));
+
+    let item = listProduct.find(product => parseInt(product.id) === parseInt(id));
+    item.quantity = 1;
+
+    if (localStorage.getItem('cart') !== null) {
+      cart = JSON.parse(localStorage.getItem('cart'));
+
+      // check if item in cart
+      if (cart.find(product => parseInt(product.id) === parseInt(id)) !== undefined) {
+        var foundIndex = cart.findIndex(x => parseInt(x.id) === parseInt(item.id));
+        item.quantity = parseInt(item.quantity) + 1;
+        cart[foundIndex] = item;
+      }
+
+      // if not in cart
+      else {
+        item.quantity = 1;
+        cart.push(item);
+      }
+    } else {
+      item.quantity = 1;
+      cart.push(item);
+    }
+
+    localStorage.setItem('cart', JSON.stringify(cart));
   }
-
-  const handleProduct = (item) => {
-    localStorage.setItem('detail', JSON.stringify(item));
-  };
 
   return (
     <>
@@ -46,9 +70,9 @@ const Item = (props) => {
               <p className='price'>Giá: <span className='price__number'>{ props.items.price }</span></p>
               <div className='product-add__button button' >
                 <Link to={`/product/${props.items.id}`}  className='button__detail'>
-                  <Button onClick={() => handleProduct(props.items)} type='primary' className='button__detail'>Chi tiết</Button>
+                  <Button type='primary' className='button__detail'>Chi tiết</Button>
                 </Link>
-                <Button onClick={() => addToCart(props.items)} type='primary' className='button__add'>Add to cart</Button>
+                <Button onClick={() => addToCart(props.items.id)} type='primary' className='button__add'>Add to cart</Button>
               </div>
             </div>
             :

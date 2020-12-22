@@ -13,6 +13,16 @@
   max-width: 100%;
 }
 
+.ant-btn {
+  border: none;
+
+  &:hover,
+  &:active,
+  &:focus {
+    color: #f36a22;
+  }
+}
+
 .link {
   color: black;
 
@@ -280,9 +290,14 @@ section {
     border-top-left-radius: 8px;
     border-top-right-radius: 8px;
 
-    img:hover {
-      transform: scale(1.05);
-      transition: all .5s;
+    img {
+      height: 186px;
+      object-fit: cover;
+
+      &:hover {
+        transform: scale(1.05);
+        transition: all .5s;
+      }
     }
   }
 }
@@ -376,6 +391,71 @@ section {
   background: #f36a22;
 }
 
+table {
+  td,
+  th {
+    padding: 8px 12px;
+    border: 1px solid #ebebeb;
+
+    &:first-child,
+    &:nth-child(4),
+    &:nth-child(5),
+    &:nth-child(6) {
+      text-align: center;
+      margin: 0 auto;
+      max-width: 10vw;
+      width: 8%;
+    }
+
+    &:nth-child(2) {
+      min-width: 10vw;
+    }
+
+    &:nth-child(3) {
+      .img-responsive {
+        min-width: 200px;
+        height: 100px;
+        margin: 0 auto;
+        object-fit: cover;
+      }
+    }
+  }
+
+  th {
+    background: #ebebeb;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 12px;
+  }
+}
+
+.table-responsive {
+  display: block;
+  width: 100%;
+  overflow-x: auto;
+}
+
+.cart__button {
+  margin: 24px 0 0;
+  text-align: right;
+
+  &-submit {
+    background: #d3530e;
+    border-radius: 4px;
+    color: #fff;
+    text-transform: uppercase;
+    line-height: 20px;
+
+    &:hover,
+    &:active,
+    &:focus {
+      color: #fff;
+      opacity: .9;
+      background: #d3530e;
+    }
+  }
+}
+
 @media (max-width: 990px) {
   .menubar,
   .ft {
@@ -417,5 +497,21 @@ section {
   .product {
     padding-top: 24px;
     padding-left: 0;
+  }
+
+  table {
+    td,
+    th {
+      min-width: 30vw;
+
+      &:first-child,
+      &:nth-child(6) {
+        min-width: 16vw;
+      }
+
+      &:nth-child(2) {
+        min-width: 50vw;
+      }
+    }
   }
 }

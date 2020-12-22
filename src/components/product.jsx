@@ -1,16 +1,24 @@
 import React from 'react';
+import { useSelector, useDispatch } from 'react-redux';
 import { useParams } from 'react-router-dom';
 import { Row, Col, Button, Tabs } from 'antd';
 
 import data from '../assets/data.json';
 
+import * as actions from '../redux/actions';
+
 const { TabPane } = Tabs;
 
 const Product = (props) => {
+  const dispatch = useDispatch();
   const { productId } = useParams();
-  // const product = JSON.parse(localStorage.getItem('detail'));
+  const countItem = useSelector((state) => state.count);
 
   let itemProduct = data.collections.list.find(detail => parseInt(detail.id) === parseInt(productId));
+
+  const addToCart = (item) => {
+    dispatch(actions.getCountCartItem(countItem));
+  }
 
   return (
     <>
@@ -36,7 +44,7 @@ const Product = (props) => {
                   { itemProduct.price }
                 </p>
                 <div className='button'>
-                  <Button type='primary' className='button__product'>Add to cart</Button>
+                  <Button type='primary' onClick={() => addToCart(props.items)} className='button__product'>Add to cart</Button>
                 </div>
               </div>
             </Col>

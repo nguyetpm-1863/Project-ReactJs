@@ -1,15 +1,15 @@
-export const DETAIL_PRODUCT = 'DETAIL_PRODUCT';
-export const getDetailProduct = (product) => async (dispatch) => {
+export const COUNT_CART = 'COUNT_CART';
+export const getCountCartItem = (count) => async (dispatch) => {
   dispatch({
-    type: DETAIL_PRODUCT,
-    product,
+    type: COUNT_CART,
+    count: count + 1,
   });
 };
 
-export const COUNT_CARD = 'COUNT_CARD';
-export const getCountCardItem = (count) => async (dispatch) => {
+export const LIST_CARD = 'LIST_CARD';
+export const getCardItem = (items) => async (dispatch) => {
   dispatch({
-    type: COUNT_CARD,
-    count: count + 1,
+    type: LIST_CARD,
+    items: items,
   });
 };
